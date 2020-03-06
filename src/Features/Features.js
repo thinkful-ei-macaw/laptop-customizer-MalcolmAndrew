@@ -8,17 +8,15 @@ class Features extends React.Component {
       
       const featureHash = feature + '-' + idx;
       
-
       return (
-
-          <Options 
+        <Options 
           key={featureHash}
           feature={this.props.list[feature]} 
           featureName={feature}
           onChange={this.props.onChange} 
           hash={featureHash} 
           selected={this.props.selected[feature]}/>
-        );
+      );
     });
 
     return (
