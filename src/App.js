@@ -61,7 +61,7 @@ class App extends Component {
       (acc, curr) => acc + this.state.selected[curr].cost,
       0
     );
-
+    
     return (
       <div className="App">
         <Header />
